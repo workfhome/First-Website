@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo website</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fc4461ac30.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm sticky-top bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="javascript:void(0)">Logo here</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)">
+                About us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)">
+                <i class="fa-solid fa-gallery-thumbnails"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:void(0)"
+                ><i class="fa-solid fa-phone-arrow-down-left"></i> Contact us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" />
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Bottom Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="container">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/assets/img1.png"
+              alt="Los Angeles"
+              class="d-block"
+              style="max-width: 100%; height: auto"
+            />
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img2.png "
+              alt="Chicago "
+              class="d-block"
+              style="max-width: 100%; height: auto"
+            />
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/assets/img3.png "
+              alt="New York "
+              class="d-block"
+              style="max-width: 100%; height: auto"
+            />
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+
+          <button
+            class="carousel-control-prev"
+            type="button "
+            data-bs-target="#demo "
+            data-bs-slide="prev "
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button "
+            data-bs-target="#demo "
+            data-bs-slide="next "
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Scrolling Notice -->
+
+    <div class="container">
+      <div class="col-xs-12 h2-titlebar mb1">
+        <div class="bgw">
+          <h2 class="text-white" style="float: left">Notice</h2>
+          <marquee onmouseover="this.stop();" onmouseout="this.start();">
+            <p>Not published yet !!!</p>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introductions & many more -->
+
+    <div class="container">
+      <div class="info">
+        <ul class="tabs">
+          <li class="active" rel="tab_introduction">
+            <span>Introduction</span>
+          </li>
+          <li class="" rel="tab_mission">
+            <span>Mission</span>
+          </li>
+          <li class="" rel="tab_vision">
+            <span>Vision</span>
+          </li>
+          <li class="" rel="tab_goal">
+            <span>Goal</span>
+          </li>
+        </ul>
+        <!-- Paragraph content starting -->
+        <div class="tab_container">
+          <h3 class="d_active tab_drawer_heading" rel="tab_introduction">
+            Introduction
+          </h3>
+          
+          <h3 class="d_active tab_drawer_heading" rel="tab_mission">Mission</h3>
+          <div id="tab_mission" class="tab_content" style="display: none">
+            <h3 class="h2">Mission</h3>
+            <p style="text-align: justify">
+              To be internationally top ranked research driven college to create
+              new benchmarks and set highest standards of excellence as an
+              activity led institution of international repute.
+            </p>
+          </div>
+          <h3 class="d_active tab_drawer_heading" rel="tab_vision">Vision</h3>
+          <div id="tab_vision" class="tab_content" style="display: none">
+            <h3 class="h2">Vision</h3>
+            <p style="text-align: justify">
+              To create visionary leaders for the world and to educate and train
+              the youth of Nepal in professional and competitive environment so
+              that they are able to grow as leaders in their respective fields
+              and contribute to the process of nation building.
+            </p>
+          </div>
+          <h3 class="d_active tab_drawer_heading" rel="tab_goal">Goal</h3>
+          <div id="tab_goal" class="tab_content" style="display: none">
+            <h3 class="h2">Goal</h3>
+            <p style="text-align: justify">&nbsp;</p>
+
+            <ul>
+              <li style="text-align: justify">
+                We value the strength of a shared mission and vision that guides
+                planning and activities.
+              </li>
+              <li style="text-align: justify">
+                We promote the highest ethical principles in life and practice.
+              </li>
+              <li style="text-align: justify">
+                We provide programs and services that are student and
+                patient-centered.
+              </li>
+              <li style="text-align: justify">
+                We support shared governance and collaboration among students,
+                faculty, staff and administration.
+              </li>
+              <li style="text-align: justify">
+                We use continuous quality improvement and best practices to
+                inform decision-making..
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Paragraph content ending -->
+      </div>
+
+      <div class="shadow">
+        <ul class="tabs">
+          <li class="active" rel="tab1">Notice</li>
+          <li rel="tab2">Results</li>
+          <li rel="tab3">Examination</li>
+          <li rel="tab4">Scholarship</li>
+          <li rel="tab5">General</li>
+        </ul>
+        <div class="tab_container">
+          <h3 class="d_active tab_drawer_heading" rel="tab1">Notices</h3>
+          <div id="tab1" class="tab_content" style="display: block">
+            <div class="content">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#" target="_blank" class="h5">
+                    Routine for First Terminal Examination 2079
+                  </a>
+            <div class="gray">
+                <span class="fa fa-calendar"></span> &nbsp;
+                <date> <ins>May 29, 2022</ins></date>
+            </div>
+            </li>
+            <li class="list-group-item">
+                <a href="#" class="h5">
+                    Admission Open for All class Apply Now !!
+                  </a>
+                <div class="gray">
+                    <span class="fa fa-calendar"></span> &nbsp;
+                    <date> <ins>May 29, 2022</ins></date>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <a href="#" class="seemore"> View All</a>
+        </div>
+
+        <h3 class="tab_drawer_heading" rel="tab2">Results</h3>
+        <div id="tab2" class="tab_content" style="display: none">
+            <div class="content">
+                <ul class="list-group">
+                    <li class="list-group-item">Not published yet !!!</li>
+                </ul>
+            </div>
+            <a href="#" class="seemore"> View All</a>
+        </div>
+
+        <h3 class="tab_drawer_heading" rel="tab3">Examination</h3>
+        <div id="tab3" class="tab_content" style="display: none">
+            <div class="content">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#" target="_blank" class="h5">
+                    Teacher's contact details during Examination-2078
+                  </a>
+                        <div class="gray" style="margin-bottom: 15px">
+                            <div class="pull-left">
+                                Published on: <span class="fa fa-calendar"></span> &nbsp;
+                                <date> <ins>Aug 06, 2021</ins></date>
+                            </div>
+                            <div class="pull-right">
+                                Deadline: <span class="fa fa-calendar"></span> &nbsp;
+                                <date> <ins>Aug 24, 2021</ins></date>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <a href="#" target="_blank" class="h5">
+                    प्रथम त्रैमासिक परीक्षा २०७८-०४-२४
+                  </a>
+                        <div class="gray" style="margin-bottom: 15px">
+                            <div class="pull-left">
+                                Published on: <span class="fa fa-calendar"></span> &nbsp;
+                                <date> <ins>Jul 29, 2021</ins></date>
+                            </div>
+                            <div class="pull-right">
+                                Deadline: <span class="fa fa-calendar"></span> &nbsp;
+                                <date> <ins>Aug 16, 2021</ins></date>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="seemore" href="#"> View All</a>
+        </div>
+
+        <h3 class="tab_drawer_heading" rel="tab4">Scholarship</h3>
+        <div id="tab4" class="tab_content" style="display: none">
+            <div class="content">
+                <ul class="list-group">
+                    <li class="list-group-item">Not published yet !!!</li>
+                </ul>
+            </div>
+            <a class="seemore" href="#">View All</a>
+        </div>
+
+        <h3 class="tab_drawer_heading" rel="tab5">General</h3>
+        <div id="tab5" class="tab_content" style="display: none">
+            <div class="content">
+                <ul class="list-group">
+                    <li class="list-group-item">Not published yet !!!</li>
+                </ul>
+            </div>
+            <a class="seemore" href="#">View All</a>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+</body>
+
+</html>
