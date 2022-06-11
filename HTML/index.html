@@ -10,7 +10,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,7 +96,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="/assets/img1.png"
+              src="../assets/img1.png"
               alt="Los Angeles"
               class="d-block"
               style="max-width: 100%; height: auto"
@@ -108,7 +108,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="/assets/img2.png "
+              src="../assets/img2.png "
               alt="Chicago "
               class="d-block"
               style="max-width: 100%; height: auto"
@@ -120,7 +120,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="/assets/img3.png "
+              src="../assets/img3.png "
               alt="New York "
               class="d-block"
               style="max-width: 100%; height: auto"
@@ -168,29 +168,72 @@
     <!-- Introductions & many more -->
 
     <div class="container">
-      <div class="info">
-        <ul class="tabs">
-          <li class="active" rel="tab_introduction">
-            <span>Introduction</span>
-          </li>
-          <li class="" rel="tab_mission">
-            <span>Mission</span>
-          </li>
-          <li class="" rel="tab_vision">
-            <span>Vision</span>
-          </li>
-          <li class="" rel="tab_goal">
-            <span>Goal</span>
-          </li>
-        </ul>
-        <!-- Paragraph content starting -->
-        <div class="tab_container">
-          <h3 class="d_active tab_drawer_heading" rel="tab_introduction">
+      <div class="d-flex align-items-start">
+        <div
+          class="nav flex-column nav-pills me-3"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <button
+            class="nav-link active"
+            id="v-pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+          >
             Introduction
-          </h3>
-          <div id="tab_introduction" class="tab_content" style="display: block">
-            <h3 class="h2">Introduction</h3>
-            <p>
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false" 
+          >
+            Mission
+          </button>
+
+          <button
+            class="nav-link"
+            id="v-pills-messages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false"
+          >
+            Vision
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+          >
+            Goal
+          </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab"
+            tabindex="0"
+          >
+            <p style="text-align: justify;">
               <strong>XYZ School</strong>, established by reputed academicians
               and educationists, is a premier academic institution in Nepal.
               Within a short span of time, the institution has been able to
@@ -200,7 +243,7 @@
               learning is sure to forthcoming.
             </p>
 
-            <p>
+            <p style="text-align: justify;">
               Realizing that education is the substratum of the societal change,
               XYZ is indefatigably involved in discharging such social
               responsibility. Addressing timely demand of the society, by the
@@ -208,7 +251,7 @@
               XYZ.
             </p>
 
-            <p>
+            <p style="text-align: justify;">
               As vast reservoir of knowledge never shows the boundary, so does
               the societal obligation of XYZ. With selfless and unrelenting
               endeavor of the promoters coupled with the commitment and
@@ -217,167 +260,57 @@
               prestigious institution in Nepal.
             </p>
           </div>
-          <h3 class="d_active tab_drawer_heading" rel="tab_mission">Mission</h3>
-          <div id="tab_mission" class="tab_content" style="display: none">
-            <h3 class="h2">Mission</h3>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab"
+            tabindex="0"
+          >
             <p style="text-align: justify">
               To be internationally top ranked research driven college to create
               new benchmarks and set highest standards of excellence as an
               activity led institution of international repute.
             </p>
           </div>
-          <h3 class="d_active tab_drawer_heading" rel="tab_vision">Vision</h3>
-          <div id="tab_vision" class="tab_content" style="display: none">
-            <h3 class="h2">Vision</h3>
-            <p style="text-align: justify">
-              To create visionary leaders for the world and to educate and train
-              the youth of Nepal in professional and competitive environment so
-              that they are able to grow as leaders in their respective fields
-              and contribute to the process of nation building.
-            </p>
-          </div>
-          <h3 class="d_active tab_drawer_heading" rel="tab_goal">Goal</h3>
-          <div id="tab_goal" class="tab_content" style="display: none">
-            <h3 class="h2">Goal</h3>
-            <p style="text-align: justify">&nbsp;</p>
 
-            <ul>
-              <li style="text-align: justify">
-                We value the strength of a shared mission and vision that guides
-                planning and activities.
-              </li>
-              <li style="text-align: justify">
-                We promote the highest ethical principles in life and practice.
-              </li>
-              <li style="text-align: justify">
-                We provide programs and services that are student and
-                patient-centered.
-              </li>
-              <li style="text-align: justify">
-                We support shared governance and collaboration among students,
-                faculty, staff and administration.
-              </li>
-              <li style="text-align: justify">
-                We use continuous quality improvement and best practices to
-                inform decision-making..
-              </li>
-            </ul>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab"
+            tabindex="0"
+          ><p style="text-align: justify;">
+            To create visionary leaders for the world and to educate and train
+            the youth of Nepal in professional and competitive environment so
+            that they are able to grow as leaders in their respective fields and
+            contribute to the process of nation building.</p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab"
+            tabindex="0"
+          ><p style="text-align: justify;">
+            We value the strength of a shared mission and vision that guides
+            planning and activities. We promote the highest ethical principles
+            in life and practice. We provide programs and services that are
+            student and patient-centered. We support shared governance and
+            collaboration among students, faculty, staff and administration. We
+            use continuous quality improvement and best practices to inform
+            decision-making.</p>
           </div>
         </div>
-
-        <!-- Paragraph content ending -->
       </div>
 
-      <div class="shadow">
-        <ul class="tabs">
-          <li class="active" rel="tab1">Notice</li>
-          <li rel="tab2">Results</li>
-          <li rel="tab3">Examination</li>
-          <li rel="tab4">Scholarship</li>
-          <li rel="tab5">General</li>
-        </ul>
-        <div class="tab_container">
-          <h3 class="d_active tab_drawer_heading" rel="tab1">Notices</h3>
-          <div id="tab1" class="tab_content" style="display: block">
-            <div class="content">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <a href="#" target="_blank" class="h5">
-                    Routine for First Terminal Examination 2079
-                  </a>
-            <div class="gray">
-                <span class="fa fa-calendar"></span> &nbsp;
-                <date> <ins>May 29, 2022</ins></date>
-            </div>
-            </li>
-            <li class="list-group-item">
-                <a href="#" class="h5">
-                    Admission Open for All class Apply Now !!
-                  </a>
-                <div class="gray">
-                    <span class="fa fa-calendar"></span> &nbsp;
-                    <date> <ins>May 29, 2022</ins></date>
-                </div>
-            </li>
-            </ul>
-        </div>
-        <a href="#" class="seemore"> View All</a>
-        </div>
+      <!-- Paragraph content ending -->
+    </div>
 
-        <h3 class="tab_drawer_heading" rel="tab2">Results</h3>
-        <div id="tab2" class="tab_content" style="display: none">
-            <div class="content">
-                <ul class="list-group">
-                    <li class="list-group-item">Not published yet !!!</li>
-                </ul>
-            </div>
-            <a href="#" class="seemore"> View All</a>
-        </div>
 
-        <h3 class="tab_drawer_heading" rel="tab3">Examination</h3>
-        <div id="tab3" class="tab_content" style="display: none">
-            <div class="content">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="#" target="_blank" class="h5">
-                    Teacher's contact details during Examination-2078
-                  </a>
-                        <div class="gray" style="margin-bottom: 15px">
-                            <div class="pull-left">
-                                Published on: <span class="fa fa-calendar"></span> &nbsp;
-                                <date> <ins>Aug 06, 2021</ins></date>
-                            </div>
-                            <div class="pull-right">
-                                Deadline: <span class="fa fa-calendar"></span> &nbsp;
-                                <date> <ins>Aug 24, 2021</ins></date>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="list-group-item">
-                        <a href="#" target="_blank" class="h5">
-                    प्रथम त्रैमासिक परीक्षा २०७८-०४-२४
-                  </a>
-                        <div class="gray" style="margin-bottom: 15px">
-                            <div class="pull-left">
-                                Published on: <span class="fa fa-calendar"></span> &nbsp;
-                                <date> <ins>Jul 29, 2021</ins></date>
-                            </div>
-                            <div class="pull-right">
-                                Deadline: <span class="fa fa-calendar"></span> &nbsp;
-                                <date> <ins>Aug 16, 2021</ins></date>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <a class="seemore" href="#"> View All</a>
-        </div>
-
-        <h3 class="tab_drawer_heading" rel="tab4">Scholarship</h3>
-        <div id="tab4" class="tab_content" style="display: none">
-            <div class="content">
-                <ul class="list-group">
-                    <li class="list-group-item">Not published yet !!!</li>
-                </ul>
-            </div>
-            <a class="seemore" href="#">View All</a>
-        </div>
-
-        <h3 class="tab_drawer_heading" rel="tab5">General</h3>
-        <div id="tab5" class="tab_content" style="display: none">
-            <div class="content">
-                <ul class="list-group">
-                    <li class="list-group-item">Not published yet !!!</li>
-                </ul>
-            </div>
-            <a class="seemore" href="#">View All</a>
-        </div>
-        </div>
-        </div>
-        </div>
 
         <!-- Footer -->
+       
 
         <footer class="footer">
             <div class="container">
@@ -386,45 +319,55 @@
                         <h4>company</h4>
                         <ul>
                             <li><a href="#">about us</a></li>
-                            <li><a href="#">our services</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                            <li><a href="#">affiliate program</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>online shop</h4>
-                        <ul>
-                            <li><a href="#">watch</a></li>
-                            <li><a href="#">bag</a></li>
-                            <li><a href="#">shoes</a></li>
-                            <li><a href="#">dress</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+                <li><a href="#">watch</a></li>
+                <li><a href="#">bag</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">dress</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+        </div>
+        </div>
+        </div>
+        <div style="text-align: center;">
+            © All Rights Reserved XYZ School
+        </div>
+
         </footer>
+
+
+
+
+
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
 </body>
+
 
 </html>
